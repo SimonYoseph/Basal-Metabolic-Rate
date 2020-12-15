@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int age_func();
+string gender();
+float height();
+int weight();
+float bmr;
+int lbs_weight;
+int inches;
+int age;
+string Gender;
+
+int main()
+{
+int age_func();
+{
+    cout<<"Enter Age: ";
+    cin>>age;
+}
+float height();
+{
+    cout<<"Enter height (in inches): ";
+    cin>>inches;
+}
+int weight();
+{
+    cout<<"Enter weight: ";
+    cin>>lbs_weight;
+}
+
+string gender();
+{
+    cout <<"Enter gender (Male or Female): ";
+    cin>>Gender;
+    if ((Gender == "male") || (Gender == "Male"))
+    {
+        bmr=((66.47)+(6.24*lbs_weight)+(12.7*inches)-(6.755*age));
+        cout<<"Your (Male) Basal Metabolic Rate is "<<bmr<<endl;
+    }
+    else if ((Gender == "female") || (Gender == "female"))
+    {
+        bmr=((655.1)+(4.35*lbs_weight)+(4.7*inches)-(4.7*age));
+        cout<<"Your (female) Basal Metabolic Rate is "<<bmr<<endl;
+    }
+    else{
+        cout<<"Invalid input, try again. "<<endl;
+    }
+}
+}
